@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>General Information about the Peoples</title>
+        <link rel = "stylesheet" type = "text/css" href = {{url_for('static', filename = "css/style.css")}} />
+    </head>
+
+    <body>
+        <h1>Welcome to this page</h1>
+
+        <form action = '/' method="POST">
+            Name : <input type = "text" name = "person" id = "person" placeholder="Enter your name">
+            <br>
+            Age : <input type = "text" name = "age" id = "age" placeholder="Enter your age">
+
+            <h2 id = "game">Select Game</h2>
+
+            <!--
+
+                <fieldset class = "field">
+                <label for = "pubg" class = "label_item"> <img class = "edited" src = "{{ url_for( 'static', filename = 'pubg.jpg')}}" /> </label>
+                <input class = "inp" type = "radio" name = "selected" id = "pubg" value = "pubg"> PUBG
+            </fieldset>
+
+            <fieldset class = "field">
+                <label for = "selected" class = "label_item"> <img class = "edited" src = "{{url_for('static', filename = 'fortnite.jpg')}}"> </label>
+                <input class = "inp" type = "radio" name = "selected" id = "fortnite" value = "fortnite">  FortNite 
+            </fieldset>
+
+            <fieldset class = "field">
+                <label for = "gta" class = "label_item"> <img class = "edited" src = "{{url_for('static', filename = 'gta.jpg')}}"> </label>
+                <input class = "inp" type = "radio" name = "selected" id = "gta" value = "gta">  GTA - V 
+             </fieldset>
+
+            <fieldset class = "field">
+                <label for = "freefire" class = "label_item"> <img class = "edited" src = "{{url_for('static', filename = 'free_fire.jpg')}}"> </label>
+                <input class = "inp" type = "radio" name = "selected" id = "freefire" value = "freefire">  Free - Fire 
+            </fieldset>
+
+            <button>Submit Info!!</button>
+
+            -->
+            
+            <fieldset class = "field">
+                <input class = "inp" type = "radio" name = "selected" id = "pubg" value = "pubg"> PUBG
+            </fieldset>
+
+            <fieldset class = "field">
+                <input type = "radio" class = "inp" type = "radio" name = "selected" id = "fortnite" value = "fortnite">  FortNite 
+            </fieldset>
+
+            <fieldset class = "field">
+                <input type = "radio"  class = "inp" type = "radio" name = "selected" id = "gta" value = "gta - v">  GTA - V 
+             </fieldset>
+
+            <fieldset class = "field">
+                <input type = "radio" class = "inp" type = "radio" name = "selected" id = "freefire" value = "freefire">  Free - Fire 
+            </fieldset>
+
+            <button>Submit Info!!</button>
+
+        </form>
+
+    </body>
+    
+</html>
